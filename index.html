@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="./weather.css" />
+</head>
+
+<style>
+    .mapouter {
+        float: right;
+        position: relative;
+        text-align: right;
+        height: 350px;
+        width: 400px;
+    }
+    
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 100%;
+        width: 100%;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <div id="search-box">
+        <h1>Search Weather of Your City</h1>
+        <input type="text" placeholder="Enter your city....." id="city" />
+        <button onclick="getWeatherData()">Search</button>
+    </div>
+
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe id="gmap_canvas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe
+        ><a href="https://fmovies-online.net"></a><br />
+      </div>
+    </div>
+
+    <div id="container"></div>
+
+    <div id="seven"></div>
+  </body>
+</html>
+<script src="./weather.js"></script>
